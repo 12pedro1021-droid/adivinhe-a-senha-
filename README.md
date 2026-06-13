@@ -22,6 +22,16 @@ python main.py
 python -m unittest
 ```
 
+## Estrutura do projeto
+
+```text
+.
+├── main.py
+├── test_main.py
+├── README.md
+└── LICENSE
+```
+
 ## Como jogar
 
 O jogo sorteia uma senha numerica entre 1 e 100. A cada tentativa, o sistema
