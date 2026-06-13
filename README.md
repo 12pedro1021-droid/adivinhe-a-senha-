@@ -42,8 +42,10 @@ A senha esta entre 1 e 100.
 Voce tem 7 tentativas.
 Digite sua tentativa: 50
 Muito alto.
+Tentativas restantes: 6
 Digite sua tentativa: 25
 Muito baixo.
+Tentativas restantes: 5
 Digite sua tentativa: 42
 Acertou! A porta foi desbloqueada.
 Voce precisou de 3 tentativa(s).

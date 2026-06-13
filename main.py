@@ -69,6 +69,10 @@ def jogar(senha_secreta=None):
             print(f"Voce precisou de {tentativas} tentativa(s).")
             return True
 
+        restantes = MAX_TENTATIVAS - tentativas
+        if restantes > 0:
+            print(f"Tentativas restantes: {restantes}")
+
     print("Suas tentativas acabaram. A porta continuou trancada.")
     print(f"A senha era {senha_secreta}.")
     return False
