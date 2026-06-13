@@ -55,12 +55,11 @@ def ler_palpite():
         return palpite
 
 
-def jogar():
-    senha_secreta = gerar_senha()
+def jogar(senha_secreta=None):
+    senha_secreta = senha_secreta if senha_secreta is not None else gerar_senha()
     tentativas = 0
-    acertou = False
 
-    while not acertou and tentativas < MAX_TENTATIVAS:
+    while tentativas < MAX_TENTATIVAS:
         tentativa = ler_palpite()
         tentativas += 1
         resultado = avaliar_palpite(tentativa, senha_secreta)
@@ -68,11 +67,11 @@ def jogar():
 
         if resultado == "acertou":
             print(f"Voce precisou de {tentativas} tentativa(s).")
-            acertou = True
+            return True
 
-    if not acertou:
-        print("Suas tentativas acabaram. A porta continuou trancada.")
-        print(f"A senha era {senha_secreta}.")
+    print("Suas tentativas acabaram. A porta continuou trancada.")
+    print(f"A senha era {senha_secreta}.")
+    return False
 
 
 def main():

@@ -16,6 +16,12 @@ Descobrir a senha correta e desbloquear a porta.
 python main.py
 ```
 
+## Rodar testes
+
+```bash
+python -m unittest
+```
+
 ## Como jogar
 
 O jogo sorteia uma senha numerica entre 1 e 100. A cada tentativa, o sistema
@@ -50,3 +56,4 @@ Voce precisou de 3 tentativa(s).
 - Laço de repetição
 - Variáveis
 - Funções
+- Testes automatizados
